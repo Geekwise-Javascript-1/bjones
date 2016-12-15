@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>dungeonScript</h1>
+        <h1>dungeonScript</h1><span></span>
         <div id="controls">
             <i class="fa fa-music" aria-hidden="true"></i>
             <span id="label"></span>
@@ -31,97 +31,28 @@
             </nav>
         </section>
         <section id="table">
-          <table>
-  <tbody>
-      <tr>
-          <td class="bt bl"></td>
-          <td class="bt bb"></td>
-          <td class="bt bb"></td>
-          <td class="bt bb"></td>
-          <td class="bt br"></td>
-          <td class="bt bl"></td>
-          <td class="bt bb"></td>
-          <td class="bt br"></td>
-      </tr>
-      <tr>
-          <td class="br bl"></td>
-          <td class="bt bb bl"></td>
-          <td class="bt"></td>
-          <td class="bt bb"></td>
-          <td class="br bb"></td>
-          <td class="br bl"></td>
-          <td class="bt br bl"></td>
-          <td class="br bl"></td>
-      </tr>
-      <tr>
-          <td class="bl"></td>
-          <td class="bt br"></td>
-          <td class="br bb bl"></td>
-          <td class="bt bl"></td>
-          <td class="bt bb"></td>
-          <td class="bb"></td>
-          <td class="br"></td>
-          <td class="br bl"></td>
-      </tr>
-      <tr>
-          <td class="br bb bl"></td>
-          <td class="br bl"></td>
-          <td class="bt bl"></td>
-          <td class="br bb"></td>
-          <td class="bt bl"></td>
-          <td class="bt br"></td>
-          <td class="br bb bl exit"></td>
-          <td class="br bl"></td>
-      </tr>
-      <tr>
-          <td class="bt bl"></td>
-          <td class="br bb"></td>
-          <td class="br bl"></td>
-          <td class="bt br bl"></td>
-          <td class="br bl"></td>
-          <td class="bb bl"></td>
-          <td class="bt bb"></td>
-          <td class="br bb"></td>
-      </tr>
-      <tr>
-          <td class="bl"></td>
-          <td class="bt bb"></td>
-          <td class="br bb"></td>
-          <td class="br bl"></td>
-          <td class="bb bl"></td>
-          <td class="bt br bb active visited"></td>
-          <td class="bt bb bl"></td>
-          <td class="bt br"></td>
-      </tr>
-      <tr>
-          <td class="bb bl"></td>
-          <td class="bt bb"></td>
-          <td class="bt br"></td>
-          <td class="bl"></td>
-          <td class="bt bb"></td>
-          <td class="bt br"></td>
-          <td class="bt bl"></td>
-          <td class="br"></td>
-      </tr>
-      <tr>
-          <td class="bt bb bl"></td>
-          <td class="bt bb"></td>
-          <td class="bb"></td>
-          <td class="br bb"></td>
-          <td class="bt bb bl"></td>
-          <td class="bb"></td>
-          <td class="br bb"></td>
-          <td class="br bb bl"></td>
-      </tr>
-  </tbody>
-</table>
         </section>
     </main>
     <footer>
-        <p>dungeonScript 2016. Made with <i class="fa fa-heart" aria-hidden="true"></i> &amp; &nbsp;<img src="img/js_logo.svg" alt="JavaScript">.</p>
+        <p>dungeonScript <span></span> Made with <i class="fa fa-heart" aria-hidden="true"></i> &amp; &nbsp;<img src="img/js_logo.svg" alt="JavaScript">.</p>
     </footer>
-
-    <!-- <script src="js/script.js"></script> -->
-    <!-- <script src="js/music-controller.js"></script> -->
+<script>
+  var theDate = new Date();
+  var theYear = document.querySelector('footer span');
+  theYear.innerHTML = theDate.getFullYear();
+  var navButtns = document.querySelectorAll('#nav button');
+for(var a = 0; a < navButtns.length; a ++){
+  //navButtns[a].style.color = 'red'
+}
+  var musButtns = document.getElementsByClassName('fa');
+  for(var b = 0; b < musButtns.length; b++){
+    musButtns[b].style.fontSize = '24px';
+  }
+  // var sections = document.getElementsByTagName('section')[1];
+  // sections.style.marginLeft = '10px'
+  // console.log(navButtns);
+</script>
+     <script src="js/ogscript.js"></script>
+    <script src="js/music-controller.js"></script>
 </body>
 </html>
